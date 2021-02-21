@@ -1,0 +1,264 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	background: #bcb588;
+}
+.logo{
+	background: #67622e;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.graficlogo{
+	padding: 5px;
+	max-width: 100%;
+	box-sizing: border-box;	
+}
+#wes{
+	width: 100%;
+}
+.logo_href{
+	width: 15%;
+	padding-top: 60px;
+}
+.logo_href a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+.logo_href a:hover{
+	border-bottom: 1px solid #fff;
+}
+.logo_tel{
+	width: 15%;
+	padding-top: 60px;
+	margin-left: 20px;
+}
+.logo_tel a{
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+.logo_tel a:hover{
+	border-bottom: 1px solid #fff;
+}
+
+nav{
+	margin: auto;
+	width: 1165px;
+	height: 50px;
+}
+.topnav{
+	font-size: 17px;
+	margin-top: 40px;
+}
+.topnav a{
+	color: #3f2817;
+	font-size: 19px;
+	font-weight: bolder;
+	text-align: center;
+	padding: 14px 16px;
+}
+.topnav a:hover{
+	border-bottom: 2px solid #3f2817;
+	font-size: 20px;
+	color: #af8b65;
+	background: #827a44;
+}
+.topnav .icon{
+	display: none;
+}
+
+/*.Слайдер.*/
+.slick-slider{
+
+}
+.slick-list{
+	overflow: hidden;
+}
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #827a44;
+	border-radius: 50%;
+}
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #827a44;
+}
+.slider{
+	position: relative;
+	padding: 0px 60px;
+}
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider__item{
+	transition: all 0.3s ease 0s;
+	text-align: center;
+	width: 100%;
+}
+.slider__item.slick-center{
+}
+.slider .slick-arrow.slick-prev{
+	border: 0;
+	left: 0;
+	background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	border: 0;
+	right: 0;
+	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+
+h1{
+	color: #3f2817;
+	font-weight: bolder;
+}
+.advantages__conteiner{
+	display: flex;
+	justify-content: center;
+}
+.advantages{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	color: #3f2817;
+}
+#advantages__text p{
+	margin-left: -20px;
+	text-align: left;
+	margin-left: 5px;
+}
+.advantages__conteiner_1{
+	display: flex;
+	justify-content: center;
+}
+.advantages_1{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.advantages__item_1{
+	width: 30%;
+	padding-top: 10px;
+	font-size: 16px;
+	color: #3f2817;
+}
+
+
+@media screen and (max-width: 768px){
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	.topnav a.icon{
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: #3f2817;
+	}
+	nav{
+		width: 100%;
+	}
+	.topnav.responsive{
+		background: #bcb588;
+		position: relative;
+		z-index: 999;
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.slider__item{
+		width: 100%;
+	}
+	.advantages{
+		max-width: 100%;
+		font-size: 8px;
+	}
+	.advantages__item_1{
+		width: 40%;
+	}
+	h1{
+		font-size: 16px;
+	}
+	.logo_href{
+		font-size: 8px;
+		padding-top: 20px;
+	}
+	.logo_tel{
+		font-size: 8px;
+		padding-top: 20px;
+	}
+
+
+}
+@media screen and (max-width: 420px){
+	.slider__item{
+		width: 50%;
+	}
+	.advantages{
+		max-width: 100%;
+		font-size: 6px;
+	}
+	h1{
+		font-size: 14px;
+	}
+	.logo_href{
+		font-size: 4px;
+		padding-top: 10px;
+	}
+	.logo_tel{
+		font-size: 4px;
+		padding-top: 10px;
+	}
+	.advantages_1{
+		flex-direction: column;
+	}
+	.advantages__item_1{
+		width: 100%;
+	}
+}
