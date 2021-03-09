@@ -242,6 +242,43 @@ footer p{
 	opacity: 0.5;
 }
 
+.sweet{
+	width: 90%;
+	background: #bcb588;
+	margin: auto;
+	border-radius: 20px;
+}
+h1.text{
+	color: #fff;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 35px;
+}
+
+.sweet__menu{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
+}
+.sweet__advantages{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.sweet__item{
+	border: 1px solid red;
+	width: 25%;
+	min-width: 200px;
+	min-height: 50px;
+}
+
 @media screen and (max-width: 768px){
 	body.lock{
 		overflow: hidden;
